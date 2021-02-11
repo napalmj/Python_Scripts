@@ -18,6 +18,7 @@ def check_dot(ext):
 		print('Nothing implimented.\nExiting...')
 		exit()
 
+#assigns
 ext_current = sys.argv[1]
 ext_final = sys.argv[2]
 
@@ -30,7 +31,7 @@ current_dir = os.getcwd()
 
 for file in os.listdir(current_dir): #listdir
 	fileName, fileExt = os.path.splitext(file) #splitting file text
-	if fileExt == ext_current: #seperate all file extensions with cxx
-		fileExt = ext_final #overwrite to cpp
+	if fileExt == ext_current: 
+		fileExt = ext_final 
 	newExt = '{}{}'.format(fileName,fileExt) #resetting format
-	os.rename(file, newExt) #resetting to directory with rename
+	os.rename(file, newExt) 
