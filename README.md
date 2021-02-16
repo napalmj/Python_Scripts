@@ -1,2 +1,2 @@
 # Python-Scripts
-Repo storing my python scripts
+Repo for storing my python scripts
