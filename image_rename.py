@@ -31,6 +31,10 @@ if len(sys.argv) == 4:
 	file_name = sys.argv[3]
 	print("Initial Date: ", start_month, "\nFinal Date:", end_month, "\nName for File:", file_name)
 
+#---------------------
+#function definitions
+#---------------------
+
 #checks if the extension matches a image file extension
 def checkExt(ext):
 	ext = ext.lower() #insures all extensions are lowercase
@@ -42,7 +46,7 @@ def checkExt(ext):
 			if isExt:
 				break
 	return isExt
-	
+
 def str2int(dataList):
 	for n in dataList[0]:
 		n = int(n)
@@ -59,13 +63,17 @@ def parseDateStr(dateStr):
 	date = date.split(':')
 	time = time.split(':')
 	dateTimeData = [date, time]
-	#print(dateTimeData[1])
-	str2int(dateTimeData)
-	d = dateTimeData[0]
-	j = d[0]
-	print(type(j))
 
 	return dateTimeData
+
+#input dates
+
+
+#---------------
+#code execution
+#---------------
+
+
 
 #goes through director
 for file in os.listdir(current_directory):
