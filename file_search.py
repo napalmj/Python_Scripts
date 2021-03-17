@@ -1,5 +1,6 @@
 #! /usr/bin/python
 '''
+Author: Nathaniel
 -------------------------------------------------------------------------------
 Python version: 3.8.5
 Script Usage: scans directory for matching files. Input string via command line

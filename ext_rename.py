@@ -1,4 +1,5 @@
 '''
+Author: Nathaniel
 ----------------------------------------------------------------------------------------------
  Script Usage: Renames all extensions specified by the user to the extension the user chooses
  How to use: script run via command line. first arg is current ext, second arg is final ext.
