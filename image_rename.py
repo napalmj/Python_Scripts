@@ -18,7 +18,6 @@ Progress:
 ---------------------------------------------------------------------------------------------------------------------
 '''
 
-
 import os
 import sys
 from PIL import Image
@@ -103,11 +102,13 @@ for file in os.listdir(current_directory):
 	tempFile = file
 	fileName, fileExt = os.path.splitext(tempFile)
 
+	#happens if file extension is correct
 	if checkExt(fileExt):
 		im = Image.open(file).getexif()[36867]
 
 		imageDate = imageDateStr(im)
 
+		#changes name if within range of date
 		if compareDates(rangeDate, imageDate):
 			newName = '{}_{}{}'.format(file_name, count, fileExt)
 			os.rename(file, newName)
