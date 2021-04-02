@@ -56,13 +56,6 @@ def checkExt(ext):
 				break
 	return isExt
 
-def str2int(dataList):
-	for n in dataList[0]:
-		n = int(n)
-	for n in dataList[1]:
-		n = int(n)
-	return dataList
-
 #splits up date string
 def imageDateStr(dateStr):
 	strHolder = ''
