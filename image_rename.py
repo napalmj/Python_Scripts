@@ -10,11 +10,6 @@ Script usage:
 Lib Details:
 	Pillow library will need to be installed for script to work
 	Reference -> pillow.readthedocs.io
-Progress:
-	It works: 3/18/2021
-	A few bugs still to work out.
-	--Logic with comparing dates.
-	--Also, I need to add a function to detect already named files which the user wants to rename the files too. Otherwise throws error
 ---------------------------------------------------------------------------------------------------------------------
 '''
 

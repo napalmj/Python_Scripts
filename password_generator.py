@@ -46,7 +46,7 @@ def write_textfile(pwdListSize):
 
 	i=0
 	while i < pwdListSize:
-		pwdFile.write(generate_password(allChars, int(pwdLen)))
+		pwdFile.write(generate_password(allCharsLessSpecial, int(pwdLen)))
 		pwdFile.write('\n')
 		i+=1
 	pwdFile.close()
